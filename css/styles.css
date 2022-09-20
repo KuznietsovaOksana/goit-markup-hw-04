@@ -1,0 +1,396 @@
+:root {
+	--main-color: #212121;
+	--brand-color: #2196f3;
+	--text-color: #757575;
+	--additional-color: #ffffff;
+	--header-logo-color: #000000;
+	--button-color: #f5f4fa;
+	--hero-bg-color: #2f303a;
+	--line-color: #ececec;
+}
+
+/* Загальні стилі */
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--main-color);
+	letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding: 0 15px;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.list > li {
+	list-style: none;
+}
+
+/* Усі кнопки */
+.button {
+	cursor: pointer;
+}
+
+/* Заголовок секцій H2 */
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+
+	color: var(--main-color);
+}
+
+/* Шапка */
+.page-header {
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo-header {
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+
+	color: var(--header-logo-color);
+}
+.logo-start {
+	color: var(--brand-color);
+}
+
+/* Навігація */
+.nav {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+.nav-list {
+	display: flex;
+}
+.nav .item + .item {
+	margin-left: 50px;
+}
+.nav-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--main-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--brand-color);
+}
+.current {
+	color: var(--brand-color);
+}
+
+/* Контакти */
+.contact-list {
+	display: flex;
+	margin-left: auto;
+}
+
+.contact-list .item + .item {
+	margin-left: 50px;
+}
+
+.contact-link {
+	display: block;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--text-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+	color: var(--brand-color);
+}
+
+/* Головна секція */
+.hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	text-align: center;
+
+	background: var(--hero-bg-color);
+}
+.hero-container {
+	width: 696px;
+}
+
+.hero-title {
+	margin-bottom: 30px;
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: var(--additional-color);
+}
+.hero-button {
+	padding: 10px 32px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+
+	background: var(--brand-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+
+	letter-spacing: 0.06em;
+
+	color: var(--additional-color);
+}
+
+/* Наші переваги */
+.advantages {
+}
+.advantages-list {
+	display: flex;
+}
+.advantages-list .item {
+	flex-basis: calc((100% - 3 * 30px) / 4);
+}
+.advantages-list .item + .item {
+	margin-left: 30px;
+}
+.advantages-title {
+	margin-bottom: 10px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: var(--main-color);
+}
+.advantages-text {
+	font-size: 14px;
+	line-height: 1.71;
+
+	color: var(--text-color);
+}
+
+/* Чим ми займаємося */
+.work {
+	padding-top: 0px;
+}
+.work-title {
+	margin-bottom: 50px;
+}
+.work-list {
+	display: flex;
+	justify-content: space-between;
+}
+.work-list .item {
+}
+
+/* Наша команда */
+.team {
+	background-color: var(--button-color);
+}
+.team-title {
+	margin-bottom: 50px;
+}
+.team-list {
+	display: flex;
+	justify-content: space-between;
+}
+.team-list .item {
+	background: var(--additional-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .item + .item {
+	margin-left: 30px;
+}
+.team-subtitle {
+	margin-top: 30px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.19;
+
+	text-align: center;
+
+	color: var(--main-color);
+}
+.team-text {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	line-height: 1.19;
+
+	text-align: center;
+
+	color: var(--text-color);
+}
+
+/* Портфоліо */
+.portfolio {
+	border-top: 1px solid var(--line-color);
+}
+.filter-list {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
+}
+.filter-list .filter-button {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 500;
+	line-height: 1.62;
+	letter-spacing: inherit;
+
+	color: var(--main-color);
+
+	background: var(--button-color);
+}
+.filter-button {
+	padding: 6px 22px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+}
+.filter-button.active {
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+	font-weight: 500;
+	line-height: 1.62;
+
+	color: var(--additional-color);
+
+	background: var(--brand-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	color: var(--additional-color);
+
+	background: var(--brand-color);
+}
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.portfolio-list li {
+	background: #ffffff;
+}
+.portfolio-link {
+}
+.portfolio-card {
+	border-left: 1px solid var(--line-color);
+	border-right: 1px solid var(--line-color);
+	border-bottom: 1px solid var(--line-color);
+	padding: 20px 24px;
+}
+.portfolio-title {
+	margin-bottom: 4px;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+
+	letter-spacing: 0.06em;
+
+	color: var(--main-color);
+}
+.portfolio-text {
+	line-height: 1.88;
+
+	color: var(--text-color);
+}
+
+/* Підвал сторінки */
+.page-footer {
+	background: var(--hero-bg-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer-container {
+}
+.logo-footer {
+	display: block;
+	margin-bottom: 20px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+
+	color: var(--additional-color);
+}
+.address {
+	font-style: normal;
+}
+.address-list {
+	font-size: 14px;
+	line-height: 1.5;
+}
+.address-list li:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.address-map {
+	color: var(--additional-color);
+}
+.address-link {
+	color: rgba(255, 255, 255, 0.6);
+}
+.address-map:hover,
+.address-map:focus,
+.address-link:hover,
+.address-link:focus {
+	color: var(--brand-color);
+}
