@@ -223,7 +223,10 @@ img {
 }
 
 .advantages-thumb {
-	padding: 25px 100px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 30px;
 	border-radius: 4px;
 	background: var(--button-color);
@@ -282,7 +285,7 @@ img {
 }
 
 .team-worker {
-	padding: 30px;
+	padding: 30px 32px;
 }
 
 .team-subtitle {
@@ -305,9 +308,8 @@ img {
 
 .team-social-list {
 	display: flex;
-	padding: 0px 32px;
 	margin-top: 16px;
-	justify-content: space-between;
+	gap: 10px;
 	align-items: center;
 }
 
@@ -364,6 +366,7 @@ img {
 .clients-link:hover,
 .clients-link:focus {
 	color: var(--brand-color);
+	border: 1px solid var(--brand-color);
 }
 
 /* Портфоліо */
@@ -419,10 +422,13 @@ img {
 .portfolio-list li {
 	background: #ffffff;
 }
-.portfolio-list li:hover {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .portfolio-link {
+	display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-card {
 	border-left: 1px solid var(--line-color);
@@ -455,6 +461,7 @@ img {
 }
 .footer-container {
 	display: flex;
+	align-items: baseline;
 }
 .footer-address {
 	margin-right: 70px;
@@ -494,7 +501,6 @@ img {
 }
 
 .footer-social-text {
-	margin-top: 12px;
 	margin-bottom: 20px;
 
 	font-weight: 700;
